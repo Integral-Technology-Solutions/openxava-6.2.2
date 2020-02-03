@@ -1,0 +1,13 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "cdr-product-ui-openxava"
+spec:
+  source:
+    git:
+      uri: "git@github.com:Integral-Technology-Solutions/openxava-6.2.2.git"
+    sourceSecret:
+        name: integralgit
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: Jenkinsfile
