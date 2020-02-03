@@ -41,8 +41,8 @@
 	<!-- PostgreSQL  -->
 	<Resource name="jdbc/CDR-JPADS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
-	      username="postgres" password="mysecretpassword" driverClassName="org.postgresql.Driver"
-	      url="jdbc:postgresql://localhost/"/> 
+	      username="cdr-product" password="7ip5Uo7a0Px2GCuj" driverClassName="org.postgresql.Driver"
+	      url="jdbc:postgresql://cdr-product-postgresql.cdr-product-postgres-db.svc.cluster.local/cdr-product"/> 
 	
 	
 	<!-- Oracle 
