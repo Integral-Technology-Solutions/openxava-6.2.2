@@ -20,10 +20,10 @@
 	-->
 	
 	<!-- H2  -->
-	<Resource name="jdbc/CDR-JPADS" auth="Container" type="javax.sql.DataSource"
+	<!-- <Resource name="jdbc/CDR-JPADS" auth="Container" type="javax.sql.DataSource"
 			  maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 			  username="sa" password="sa" driverClassName="org.h2.Driver"
-			  url="jdbc:h2:tcp://localhost/~/h2/db"/>
+			  url="jdbc:h2:tcp://localhost/~/h2/db"/> -->
 	 
 	<!-- HSQLDB -->   	
     <!-- Resource name="jdbc/CDR-JPADS" auth="Container" type="javax.sql.DataSource"
@@ -38,12 +38,12 @@
 	      url="jdbc:mysql://localhost:3306/"/>	      
 	-->      
 	
-	<!-- PostgreSQL 
+	<!-- PostgreSQL  -->
 	<Resource name="jdbc/CDR-JPADS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
-	      username="postgres" password="" driverClassName="org.postgresql.Driver"
-	      url="jdbc:postgresql://localhost/"/>
-	-->
+	      username="postgres" password="mysecretpassword" driverClassName="org.postgresql.Driver"
+	      url="jdbc:postgresql://localhost/"/> 
+	
 	
 	<!-- Oracle 
 	<Resource name="jdbc/CDR-JPADS" auth="Container" type="javax.sql.DataSource"
