@@ -5,7 +5,4 @@ ADD config/docker/ROOT.war /usr/local/tomcat/webapps/
 COPY config/docker/tomcat-users.xml /usr/local/tomcat/conf/
 COPY config/docker/postgresql-42.2.9.jar /usr/local/tomcat/lib/
 
-USER root
-
-EXPOSE 8080
-
+CMD ["catalina.sh", "run"]
