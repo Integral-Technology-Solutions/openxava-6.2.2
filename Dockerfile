@@ -4,3 +4,6 @@ FROM tomcat:latest
 COPY workspace.dist/CDR-JPA.dist/CDR-JPA.war /usr/local/tomcat/webapps/
 COPY config/docker/tomcat-users.xml /usr/local/tomcat/conf/
 COPY config/docker/postgresql-42.2.9.jar /usr/local/tomcat/lib/
+
+EXPOSE 8080
+

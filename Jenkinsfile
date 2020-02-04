@@ -26,7 +26,7 @@
 node ('linux') {
     // def antHome = tool name: 'Ant 1.9', type: 'ant'
 
-    stage('DeployDev') {
+    stage('Create Docker') {
         echo "Deploy to Dev"
         ls -al 
 	sleep 5
