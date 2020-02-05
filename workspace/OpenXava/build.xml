@@ -1005,10 +1005,10 @@
 	
 	<target name="copyWeb">
 		<copy todir="../${project}/web/xava" overwrite="true" >
-			<fileset dir="${openxava.base.dir}/OpenXava/web" excludes="WEB-INF/**,style/custom.css,propertyActionsExt.jsp,referenceActionsExt.jsp,referenceFrameHeaderExt.jsp,collectionFrameHeaderExt.jsp,viewExt.jsp,editors/listEditorTotalActionsExt.jsp,editors/listEditorLastRowExt.jsp"/>
+			<fileset dir="${openxava.base.dir}/OpenXava/web" excludes="WEB-INF/**,style/light.css,propertyActionsExt.jsp,referenceActionsExt.jsp,referenceFrameHeaderExt.jsp,collectionFrameHeaderExt.jsp,viewExt.jsp,editors/listEditorTotalActionsExt.jsp,editors/listEditorLastRowExt.jsp"/>
 		</copy>
 		<copy todir="../${project}/web/xava">
-			<fileset dir="${openxava.base.dir}/OpenXava/web" includes="style/custom.css,propertyActionsExt.jsp,referenceActionsExt.jsp,referenceFrameHeaderExt.jsp,collectionFrameHeaderExt.jsp,viewExt.jsp,editors/listEditorTotalActionsExt.jsp,editors/listEditorLastRowExt.jsp">
+			<fileset dir="${openxava.base.dir}/OpenXava/web" includes="style/light.css,propertyActionsExt.jsp,referenceActionsExt.jsp,referenceFrameHeaderExt.jsp,collectionFrameHeaderExt.jsp,viewExt.jsp,editors/listEditorTotalActionsExt.jsp,editors/listEditorLastRowExt.jsp">
 				<present present="srconly" targetdir="../${project}/web/xava" />
 			</fileset>
 		</copy>
@@ -1019,10 +1019,10 @@
 
 	<target name="installAddons">
 		<copy todir="../${project}/web" overwrite="true">
-			<fileset dir="${openxava.base.dir}/Addons/web" excludes="naviox/firstSteps.jsp,naviox/welcome.jsp,naviox/indexExt.jsp,naviox/organizationNameExt.jsp"/>
+			<fileset dir="${openxava.base.dir}/Addons/web" excludes="naviox/firstSteps.jsp,naviox/welcome.jsp,naviox/index.jsp,naviox/leftMenu.jsp,naviox/indexExt.jsp,naviox/organizationNameExt.jsp"/>
 		</copy>
 		<copy todir="../${project}/web">
-			<fileset dir="${openxava.base.dir}/Addons/web" includes="naviox/firstSteps.jsp,naviox/welcome.jsp,naviox/indexExt.jsp,naviox/organizationNameExt.jsp">
+			<fileset dir="${openxava.base.dir}/Addons/web" includes="naviox/firstSteps.jsp,naviox/welcome.jsp,naviox/index.jsp,naviox/leftMenu.jsp,naviox/indexExt.jsp,naviox/organizationNameExt.jsp">
 				<present present="srconly" targetdir="../${project}/web" />
 			</fileset>
 		</copy>			
